@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Certificate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="Untitled3.css" rel="stylesheet">
+<link href="vacert1.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="util.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutSine');
+   });
+   $('#ThemeableMenu1 .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.show',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+});
+</script>
+</head>
+<body>
+
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:0;">
+<div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
+<div class="container">
+<a id="ThemeableMenu1-logo" href="#"><img alt="" title="" src="images/logo32.jpg"></a>
+<div class="navbar-header">
+<button title="Hamburger Menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="https://dykx09.github.io" class="nav-link">Portfolio</a>
+</li>
+<li class="nav-item">
+<a href="../skills.html" class="nav-link">Skills</a>
+</li>
+<li class="nav-item">
+<a href="../apps1.html" class="nav-link">Apps & Tools</a>
+</li>
+<li class="nav-item">
+<a href="../contact.html" class="nav-link">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Text1" style="position:absolute;left:8px;top:115px;width:982px;height:65px;text-align:center;z-index:3;">
+<span style="color:#FFA500;font-family:'MS Sans Serif';font-size:53px;"><strong>VA SUCCESS CERTIFICATE OF COMPLITION</strong></span></div>
+<picture id="wb_Picture1" style="position:absolute;left:435px;top:278px;width:535px;height:354px;z-index:4">
+<img src="images/Arnel Mapa VA SUCCESS CERT.png" id="Picture1" alt="" width="535" height="378">
+</picture>
+<div id="wb_Text2" style="position:absolute;left:57px;top:305px;width:339px;height:241px;z-index:5;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:24px;">During the training, I learned a lot of things about becoming a virtual assistant. I gained knowledge in social media management, lead generation, and graphic designing. Additionally, I was taught marketing strategies such as email marketing.</span></div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="contact.css" rel="stylesheet">
+<link href="contact.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
+   $("a[href*='#about']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#about').offset().top-50 }, 600, 'easeInQuad');
+   });
+   $("a[href*='#contact']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top }, 600, 'linear');
+   });
+});
+</script>
+</head>
+<body>
+<div id="PageHeader" style="position:fixed;overflow:hidden;text-align:center;left:0;top:0;right:0;height:50px;z-index:7777;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
+<div id="PageHeader_Container" style="width:970px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="about" style="position:relative;text-align:center;width:100%;height:332px;float:left;clear:left;display:block;z-index:18;">
+<div id="about_Container" style="width:970px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Shape1" style="position:absolute;left:323px;top:271px;width:163px;height:39px;z-index:0;">
+<a href="javascript:window.location.reload()"><img class="hover" src="images/img0001_hover.png" alt="" width="163" height="39" style="border-width:0;width:163px;height:39px;"><span class="default"><img src="images/img0001.png" id="Shape1" alt="" width="163" height="39" style="width:163px;height:39px;"></span></a></div>
+<div id="wb_Text3" style="position:absolute;left:138px;top:129px;width:695px;height:74px;text-align:center;z-index:1;">
+<span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:27px;"><strong>ABOUT</strong></span><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:21px;"><br><br></span><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:16px;">Copyright © 2024 | All rights reserved by vaarnel</span></div>
+<a href="https://www.facebook.com/profile.php?id=61555878844864"><img src="images/img0002.png" id="socialmedia_facebook" alt="" title="" style="border-width:0;position:absolute;left:152px;top:268px;width:150px;height:45px;z-index:2" width="150" height="45"></a>
+<a href="mailto:vaarnelmapa@gmail.com"><img src="images/img0004.png" id="socialmedia_email" alt="" title="" style="border-width:0;position:absolute;left:501px;top:268px;width:150px;height:45px;z-index:3" width="150" height="45"></a>
+<a href="https://www.linkedin.com/in/arnel-mapa/"><img src="images/img0003.png" id="socialmedia_linkedin" alt="" title="" style="border-width:0;position:absolute;left:700px;top:268px;width:150px;height:45px;z-index:4" width="150" height="45"></a>
+</div>
+</div>
+<div id="wb_contact">
+<div id="contact">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text2">
+<span style="color:#FFFFFF;font-family:Calibri;font-size:17px;"><strong>THANK YOU!<br><br></strong></span><span style="color:#FFFFFF;font-family:'MS Sans Serif';font-size:17px;"><strong>Let's discuss how I can help your company achieve its goals. Contact me to schedule a meeting</strong></span>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<input type="text" id="Editbox1" style="display:block;width: 100%;height:38px;z-index:5;" name="name" value="" spellcheck="false" placeholder="Your name*">
+<input type="text" id="Editbox2" style="display:block;width: 100%;height:38px;z-index:6;" name="email" value="" spellcheck="false" placeholder="Your ermail*">
+<input type="text" id="Editbox3" style="display:block;width: 100%;height:38px;z-index:7;" name="phone" value="" spellcheck="false" placeholder="Your phone number">
+</div>
+<div class="col-2">
+<textarea name="TextArea1" id="TextArea1" style="display:block;width: 100%;;height:136px;z-index:8;" rows="7" cols="51" autocomplete="off" spellcheck="false" placeholder="Add comments"></textarea>
+</div>
+</div>
+</div>
+</div>
+<a id="Button1" href="mailto:vaarnelmapa@gmail.com" style="display:block;width: 100%;;height:34px;z-index:11;">SEND MESSAGE</a>
+</div>
+</div>
+</div>
+</div>
+<picture id="wb_Picture1" style="position:absolute;left:48px;top:0px;width:155px;height:155px;z-index:20">
+<img src="images/Black_Yellow_Orange_Gaming_Logo__1_-removebg-preview.png" id="Picture1" alt="" width="155" height="155">
+</picture>
+</body>
+</html>

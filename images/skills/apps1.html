@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Apps & Tools</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="apps&tools.css" rel="stylesheet">
+<link href="apps1.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="util.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutSine');
+   });
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'easeOutCirc');
+   });
+   $('#ThemeableMenu2 .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+   $(document).on('click','.ThemeableMenu2-navbar-collapse.show',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M0,0c0,0,0,6,0,6.7c0,18,240.2,93.6,615.2,92.6C989.8,98.5,1000,25,1000,6.7c0-0.7,0-6.7,0-6.7H0z"/>
+</svg></div>
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Breadcrumb1" style="display:inline-block;width:100%;z-index:0;vertical-align:top;">
+<ul id="Breadcrumb1">
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ThemeableMenu2" style="display:inline-block;width:100%;text-align:center;z-index:1;">
+<div id="ThemeableMenu2" class="ThemeableMenu2" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button title="Hamburger Menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu2-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu2-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="https://dykx09.github.io" class="nav-link">Home</a>
+</li>
+<li class="nav-item">
+<a href="./skills.html" class="nav-link">Services</a>
+</li>
+<li class="nav-item">
+<a href="./contact.html" class="nav-link">Contact</a>
+</li>
+<li class="nav-item">
+<a href="./cert/vacert1.html" class="nav-link">Certificates</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:2;">
+<img src="images/buffer-removebg-preview.png" id="Image1" alt="" title="600x400" width="455" height="263">
+</div>
+<div id="wb_Shape2" style="display:inline-block;width:38px;height:38px;z-index:3;position:relative;">
+<img src="images/img0002.png" id="Shape2" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape3" style="display:inline-block;width:38px;height:38px;z-index:4;position:relative;">
+<img src="images/img0003.png" id="Shape3" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape4" style="display:inline-block;width:38px;height:38px;z-index:5;position:relative;">
+<img src="images/img0004.png" id="Shape4" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape5" style="display:inline-block;width:38px;height:38px;z-index:6;position:relative;">
+<img src="images/img0005.png" id="Shape5" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape6" style="display:inline-block;width:38px;height:38px;z-index:7;position:relative;">
+<img src="images/img0006.png" id="Shape6" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:8;">
+<h1 id="Heading1">BUFFER</h1>
+</div>
+<div id="wb_Heading2" style="display:inline-block;width:100%;z-index:9;">
+<h2 id="Heading2">Description</h2>
+</div>
+<div id="wb_Text1">
+<span style="color:#FFFFFF;"><strong>Buffer is well-organized layout wise, making it a very simple tool to maintain your social media accounts. It has an automatic function for scheduling social media postings. <br><br>The software enables users to update status and tweets. It allows for simultaneous posting over several networks while also providing the user the choice of when to publish.</strong></span>
+</div>
+<div id="wb_Shape1" style="display:inline-block;width:102px;height:44px;z-index:11;position:relative;">
+<a href="https://buffer.com/"><img class="hover" src="images/img0001_hover.png" alt="" width="102" height="44" style="border-width:0;width:102px;height:44px;"><span class="default"><img src="images/img0001.png" id="Shape1" alt="" width="102" height="44" style="width:102px;height:44px;"></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:12;">
+<img src="images/meta-removebg-preview.png" id="Image2" alt="" title="550x350" width="455" height="455">
+</div>
+<div id="wb_Shape12" style="display:inline-block;width:38px;height:38px;z-index:13;position:relative;">
+<img src="images/img0007.png" id="Shape12" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape13" style="display:inline-block;width:38px;height:38px;z-index:14;position:relative;">
+<img src="images/img0012.png" id="Shape13" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape14" style="display:inline-block;width:38px;height:38px;z-index:15;position:relative;">
+<img src="images/img0013.png" id="Shape14" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape15" style="display:inline-block;width:38px;height:38px;z-index:16;position:relative;">
+<img src="images/img0014.png" id="Shape15" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape16" style="display:inline-block;width:38px;height:38px;z-index:17;position:relative;">
+<img src="images/img0015.png" id="Shape16" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Heading3" style="display:inline-block;width:100%;z-index:18;">
+<h1 id="Heading3">META</h1>
+</div>
+<div id="wb_Heading4" style="display:inline-block;width:100%;z-index:19;">
+<h2 id="Heading4">Description</h2>
+</div>
+<div id="wb_Text2">
+<span style="color:#FFFFFF;"><strong>allows you to create and schedule posts, ads, and Stories across multiple platforms. Facebook's Creator Studio has a few more tricks up its sleeve. It features additional post setup options, monetization features, post testing, and a royalty-free sound collection</strong></span>
+</div>
+<div id="wb_Shape7" style="display:inline-block;width:102px;height:44px;z-index:21;position:relative;">
+<a href="https://business.facebook.com/"><img class="hover" src="images/img0016_hover.png" alt="" width="102" height="44" style="border-width:0;width:102px;height:44px;"><span class="default"><img src="images/img0016.png" id="Shape7" alt="" width="102" height="44" style="width:102px;height:44px;"></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:22;">
+<img src="images/ps-removebg-preview.png" id="Image3" alt="" title="550x350" width="455" height="445">
+</div>
+<div id="wb_Shape18" style="display:inline-block;width:38px;height:38px;z-index:23;position:relative;">
+<img src="images/img0008.png" id="Shape18" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape19" style="display:inline-block;width:38px;height:38px;z-index:24;position:relative;">
+<img src="images/img0009.png" id="Shape19" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape20" style="display:inline-block;width:38px;height:38px;z-index:25;position:relative;">
+<img src="images/img0010.png" id="Shape20" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape21" style="display:inline-block;width:38px;height:38px;z-index:26;position:relative;">
+<img src="images/img0011.png" id="Shape21" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape22" style="display:inline-block;width:38px;height:38px;z-index:27;position:relative;">
+<img src="images/img0017.png" id="Shape22" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Heading5" style="display:inline-block;width:100%;z-index:28;">
+<h1 id="Heading5">PhotoShop</h1>
+</div>
+<div id="wb_Heading6" style="display:inline-block;width:100%;z-index:29;">
+<h2 id="Heading6">Description</h2>
+</div>
+<div id="wb_Text3">
+<span style="color:#FFFFFF;"><strong>is a critical tool for designers, web developers, graphic artists, photographers, and creative professionals. It is widely used for image editing, retouching, creating image compositions, website mockups, and adding affects. Digital or scanned images can be edited for use online or in-print</strong></span>
+</div>
+<div id="wb_Shape17" style="display:inline-block;width:102px;height:44px;z-index:31;position:relative;">
+<a href="https://www.adobe.com/ph_en/products/photoshop.html"><img class="hover" src="images/img0018_hover.png" alt="" width="102" height="44" style="border-width:0;width:102px;height:44px;"><span class="default"><img src="images/img0018.png" id="Shape17" alt="" width="102" height="44" style="width:102px;height:44px;"></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image4" style="display:inline-block;width:100%;height:auto;z-index:32;">
+<img src="images/caa-removebg-preview (1).png" id="Image4" alt="" title="550x350" width="455" height="455">
+</div>
+<div id="wb_Shape24" style="display:inline-block;width:38px;height:38px;z-index:33;position:relative;">
+<img src="images/img0019.png" id="Shape24" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape25" style="display:inline-block;width:38px;height:38px;z-index:34;position:relative;">
+<img src="images/img0020.png" id="Shape25" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape26" style="display:inline-block;width:38px;height:38px;z-index:35;position:relative;">
+<img src="images/img0021.png" id="Shape26" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape27" style="display:inline-block;width:38px;height:38px;z-index:36;position:relative;">
+<img src="images/img0022.png" id="Shape27" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+<div id="wb_Shape28" style="display:inline-block;width:38px;height:38px;z-index:37;position:relative;">
+<img src="images/img0023.png" id="Shape28" alt="" width="38" height="38" style="width:38px;height:38px;">
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Heading7" style="display:inline-block;width:100%;z-index:38;">
+<h1 id="Heading7">Canva</h1>
+</div>
+<div id="wb_Heading8" style="display:inline-block;width:100%;z-index:39;">
+<h2 id="Heading8">Description</h2>
+</div>
+<div id="wb_Text4">
+<span style="color:#FFFFFF;"><strong>The Canva editor is intuitive to help you explore and experiment with design tools at your own pace. Canva has thousands of templates to help you start inspired. They’re a great way to learn how different elements work together to create eye-catching designs</strong></span>
+</div>
+<div id="wb_Shape23" style="display:inline-block;width:102px;height:44px;z-index:41;position:relative;">
+<a href="https://www.canva.com/"><img class="hover" src="images/img0024_hover.png" alt="" width="102" height="44" style="border-width:0;width:102px;height:44px;"><span class="default"><img src="images/img0024.png" id="Shape23" alt="" width="102" height="44" style="width:102px;height:44px;"></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
