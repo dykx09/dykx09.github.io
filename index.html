@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Arnel Mapa PORTFOLIO</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="Untitled1.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="va.panel.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'right', toggle: true, overlay: true});
+});
+</script>
+</head>
+<body>
+
+<div id="wb_header">
+<div id="header-divider-top">
+<svg id="bigHalfCircle" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="divider-fill" d="M0 100 C40 0 60 0 100 100 Z" />
+</svg></div>
+<div id="header">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_Breadcrumb1" style="display:inline-block;width:100%;z-index:0;vertical-align:top;">
+<ul id="Breadcrumb1">
+<li><br><a href="../">PORTFOLIO</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5-overlay"></div>
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading5" style="display:inline-block;width:100%;z-index:1;">
+<h1 id="Heading5" class="h1">
+   <br><br><br><br><br><br><br></h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading3" style="display:inline-block;width:300px;height:51px;z-index:2;">
+<h1 id="Heading3">ARNEL MAPA</h1>
+</div>
+<div id="wb_Text3">
+<span style="color:#FFFFFF;font-family:Arial;font-size:16px;"><strong><em>A Virtual Assistant with years of experience in various tasks as a customer Service in Retail and healthcare . <br><br></em></strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:17px;"><strong><em>A </em></strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:16px;"><strong><em>tech savvy and problem solver that you can rely on. <br><br>Enthusiastic individual with superior skills in both team based and independent capacities.</em></strong></span>
+</div>
+<div id="wb_Shape2" style="display:inline-block;width:132px;height:40px;z-index:4;position:relative;">
+<a href="skills/skills.html"><div id="Shape2"><div id="Shape2_text"><div><span style="color:#000000;font-family:Arial;font-size:13px;"><strong>LEARN MORE</strong></span></div></div></div></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:5;">
+<img src="images/dpp.jpg" id="Image1" alt="" width="455" height="497">
+</div>
+<div id="wb_Heading6" style="display:inline-block;width:100%;z-index:6;">
+   <h2 id="Heading6" style="font-family:Arial; font-weight: bold;">FREELANCER, COLD CALLER, SOCIAL MEDIA MANAGER, LEAD GENERATION SPECIALIST, GRAPHIC DESIGNER</h2>
+ </div>
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
